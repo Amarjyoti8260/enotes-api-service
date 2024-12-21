@@ -2,16 +2,16 @@ package com.springproject.service;
 
 import java.util.List;
 
-import javax.swing.text.StyledEditorKit.BoldAction;
-
 import org.springframework.stereotype.Service;
 
-import com.springproject.entity.Category;
+import com.springproject.dto.CategoryDto;
+import com.springproject.dto.CategoryResponse;
 
 @Service
 public interface CategoryService {
 	
-	public Boolean saveCatagory(Category category);
-	public List<Category> getAllCategory();
+	public Boolean saveCatagory(CategoryDto categoryDto);
+	public List<CategoryDto> getAllCategory();
+	public List<CategoryResponse> getActiveCategory();
 	
 }
